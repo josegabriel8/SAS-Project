@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-27T14:40:57Z",
+  "_captured_run_id": "r_73a2cbf030fe4cb4b8c5f057ab642f24",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote PatientsAll (29 rows, 9 columns).",
+    "NOTE: PROC PRINT completed: 29 observations printed, 10 variables",
+    "NOTE: Table report_intersection created.",
+    "NOTE: Table report_counts created.",
+    "NOTE: PROC PRINT completed: 1 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

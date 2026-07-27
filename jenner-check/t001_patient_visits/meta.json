@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_patient_visits",
+  "source_file": "Code/Project.sas",
+  "source_blob_sha": "61f933e59506ae038405c7fd378e2c2c7da5d03f",
+  "source_commit": "4f68409478e039ca5b35a08ae9a63ad7adbb7ab2",
+  "notes": "Medical-visit preprocessing pipeline: stacks three per-visit datasets (RENAME + MDY dates), derives VAS_CAT (L/H), merges birthdates, then reports via PROC PRINT, two PROC MEANS (CLASS visit; WHERE VAS_CAT='L'), PROC TTEST on VAS, and PROC SQL inner/left joins with CASE WHEN counts. Only change vs upstream: the %import PROC IMPORT DBMS=XLS of external Visit1..Visit3.xls is replaced by inline DATALINES building the same raw per-visit columns (12/10/7 rows, values sampled from data/Visit1.xls); all author logic unchanged; ODS RTF paths made relative."
+}
